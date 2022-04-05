@@ -23,7 +23,7 @@ final class MockCardService: Serviceable {
     
     func getUsersSuccess() {
       let item = Item(login: "testLogin", id: 1, nodeID: "testNodeId", avatarURL: "", gravatarID: "", url: "", htmlURL: "", followersURL: "", followingURL: "", gistsURL: "", starredURL: "", subscriptionsURL: "", organizationsURL: "", reposURL: "", eventsURL: "", receivedEventsURL: "", siteAdmin: false, score: 20)
-        let getUsersResponse = GitUserResponse(incompleteResults: true, items: [item])
+        let getUsersResponse = GitUserResponse( items: [item])
       getUsersClosure(.success(getUsersResponse))
     }
     

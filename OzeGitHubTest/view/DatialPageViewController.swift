@@ -32,16 +32,12 @@ class DatialPageViewController: BaseViewController,Coordinating {
     return label
   }()
   
-  lazy var dobLabel: UILabel = {
-    let label = UILabel.labelRegular(text: "DOB",textSize: 14,alignment: .center)
-    return label
-  }()
+ 
   
   lazy var detailsStackV: UIStackView = {
     let stackView = UIStackView()
     stackView.addArrangedSubview(loginLabel)
     stackView.addArrangedSubview(idLabel)
-    stackView.addArrangedSubview(dobLabel)
     stackView.axis = .vertical
     stackView.alignment = .center
     stackView.spacing = 8
