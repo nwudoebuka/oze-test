@@ -25,7 +25,7 @@ class LandingViewController: BaseViewController,Coordinating{
   
   override func viewDidLoad() {
         super.viewDidLoad()
-    title = "Lagos developers"
+    title = ""
     view.backgroundColor = .white
     parentTableView.delegate = self
     parentTableView.dataSource = self
